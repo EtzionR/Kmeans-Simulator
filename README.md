@@ -1,5 +1,5 @@
 # Kmeans-Simulator
-Allows 2D view of the calculation process of kmeans clustering.
+Allows a 2D view of the calculation process of kmeans clustering.
 
 ## Overview
 The kmeans algorithm is one of the best known clustering methods in the field of **machine learning**. At the same time, the use of the algorithm is usually as a **"black box"** that the users dont know what steps were taken during it. Therefore, most users do not know what happened in the calculation processes of the cluster.
