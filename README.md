@@ -90,7 +90,7 @@ When the variables displayed are:
 
 **k:** the number of clusters that should split the data
 
-**eps:** epsilon for centers calculation you want to define (default: as follow: [LINK](https://render.githubusercontent.com/render/math?math=Epsilon =  \epsilon  = \frac{min(len(column_{1}) \cdots len(column_{p}))}{\sqrt{n}}))
+**eps:** epsilon for centers calculation you want to define (default: as follow: [LINK](https://render.githubusercontent.com/render/math?math=Epsilon =  \epsilon  = \frac{min(len(column_{1}) \cdots len(column_{p}))}{\sqrt{n}})
 
 
 ## License
