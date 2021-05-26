@@ -6,7 +6,7 @@ The kmeans algorithm is one of the best known clustering methods in the field of
 
 This problem grows when it comes to an algorithm that is based on a **random start point** of its computational process - as Kmeans. This aspect means that different results can be obtained for the exact same inputs - which requires the ability to investigate the different stages of the clustering calculation.
 
-The simulator code developed to do so. It is based on code that apply kmeans algorithm, and which produces at each stage a **plot that displays the current state** of the row classification. The code works similar to the Kmeans algorithm as follows:
+The [**Kmeans simulator code**](https://github.com/EtzionR/Kmeans-Simulator/blob/main/kmeans.py) developed to do so. It is based on code that apply kmeans algorithm, and which produces at each stage a **plot that displays the current state** of the row classification. The code works similar to the Kmeans algorithm as follows:
 
 1. Starting **randomaly** K primary centers from the original dataframe .
  
@@ -18,7 +18,7 @@ The simulator code developed to do so. It is based on code that apply kmeans alg
 
 5. **Repeat** stages 2 + 3, until the change of the centers becomes minor.
 
-The code works by displaying the points in 2D space based on the **first two fields** in the given dataframe, but the calculation is performed on all the fields. Also, a simple version of the algorithm built for this project, without plots generating, is available here: [**kmeans algorithm**](). It should be noted that this code of calculating the cluster using Kmeans **does not require special library installations** and it built from scratch only using basic Python commands and using only random library (installed by default).
+The code works by displaying the points in 2D space based on the **first two fields** in the given dataframe, but the calculation is performed on all the fields. Also, a simple version of the algorithm built for this project, without plots generating, is available here: [**kmeans algorithm**](https://github.com/EtzionR/Kmeans-Simulator/blob/main/km.py). It should be noted that this code of calculating the cluster using Kmeans **does not require special library installations** and it built from scratch only using basic Python commands and using only random library (installed by default).
 
 It should be noted that the algorithm iterations stop when the distance between the old and new centers reaches a **minor size** determined by a defined epsilon. This size is calculated automatically as follows:
 
@@ -30,7 +30,11 @@ when P represent the number of columns in the dataframe, and len:
 
 It is also possible to define under the parameter **"eps"** another epsilon, which the user wants to use. At the same time, the decision to select epsilon automatically brings the code at the end of its run to fairly **accurate** results relative to the run when eps = 0:
 
+![acc](https://github.com/EtzionR/Kmeans-Simulator/blob/main/picture/eps_adapt.png)
+
 It can also be clearly seen that the **amount of iterations decreases significantly** when making an informed choice of epsilon:
+
+![itr](https://github.com/EtzionR/Kmeans-Simulator/blob/main/picture/eps_distr.png)
 
 example
 Everything Else
