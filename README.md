@@ -57,7 +57,7 @@ It can also be clearly seen that the **amount of iterations decreases significan
 ## Libraries
 The code uses the following libraries in Python:
 
-**random** (Default installed)
+ - **random** (Default installed)
 
 
 ## Application
