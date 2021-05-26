@@ -24,6 +24,10 @@ It should be noted that the algorithm iterations stop when the distance between 
 
 <img src="https://render.githubusercontent.com/render/math?math=Epsilon =  \epsilon  = \frac{min(len(column_{1}) \cdots len(column_{p}))}{\sqrt{n}}">
 
+when P represent the number of columns in the dataframe, and len:
+
+<img src="https://render.githubusercontent.com/render/math?math=len(x) = \mid max(x)-min(x) \mid">
+
 It is also possible to define under the parameter **"eps"** another epsilon, which the user wants to use. At the same time, the decision to select epsilon automatically brings the code at the end of its run to fairly **accurate** results relative to the run when eps = 0:
 
 It can also be clearly seen that the **amount of iterations decreases significantly** when making an informed choice of epsilon:
