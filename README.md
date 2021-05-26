@@ -53,5 +53,45 @@ It can also be clearly seen that the **amount of iterations decreases significan
 
 ![itr](https://github.com/EtzionR/Kmeans-Simulator/blob/main/picture/eps_distr.png)
 
-example
-Everything Else
+
+## Libraries
+The code uses the following libraries in Python:
+
+**random** (Default installed)
+
+
+## Application
+An application of the code is attached to this page under the name: 
+
+[**implementation - not ready**]()
+
+the examples outputs are also attached here.
+
+
+## Example for using the code
+To use this code, you just need to import it as follows:
+``` sh
+# import
+from kmeans import Simulator
+import pandas as pd
+
+# define variables
+data= pd.read_csv(r'path\data.csv')  
+k = 5
+eps = 0.001
+
+# application
+Simulator(data,k,eps=eps).fit().create_gif('output')
+```
+
+When the variables displayed are:
+
+**data:** pandas dataframe that you want to perform clustering on all its columns
+
+**k:** the number of clusters that should split the data
+
+**eps:** epsilon for centers calculation you want to define (default: as follow: [LINK](https://render.githubusercontent.com/render/math?math=Epsilon =  \epsilon  = \frac{min(len(column_{1}) \cdots len(column_{p}))}{\sqrt{n}}))
+
+
+## License
+MIT © [Etzion Harari](https://github.com/EtzionData)
