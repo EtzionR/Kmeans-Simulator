@@ -22,7 +22,7 @@ The code works by displaying the points in 2D space based on the **first two fie
 
 It should be noted that the algorithm iterations stop when the distance between the old and new centers reaches a **minor size** determined by a defined epsilon. This size is calculated automatically as follows:
 
-<img src="https://render.githubusercontent.com/render/math?math=S({x_{i}}) = Epsilon =  \epsilon  = min(\frac{len(column_{1}) \cdots len(column_{p})}{\sqrt{n}})">
+<img src="https://render.githubusercontent.com/render/math?math=Epsilon =  \epsilon  = \frac{min(len(column_{1}) \cdots len(column_{p}))}{\sqrt{n}}">
 
 It is also possible to define under the parameter **"eps"** another epsilon, which the user wants to use. At the same time, the decision to select epsilon automatically brings the code at the end of its run to fairly **accurate** results relative to the run when eps = 0:
 
