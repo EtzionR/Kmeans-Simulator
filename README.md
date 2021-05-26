@@ -18,7 +18,11 @@ The [**Kmeans simulator code**](https://github.com/EtzionR/Kmeans-Simulator/blob
 
 5. **Repeat** stages 2 + 3, until the change of the centers becomes minor.
 
-The code works by displaying the points in 2D space based on the **first two fields** in the given dataframe, but the calculation is performed on all the fields. Also, a simple version of the algorithm built for this project, without plots generating, is available here: [**kmeans algorithm**](https://github.com/EtzionR/Kmeans-Simulator/blob/main/km.py). It should be noted that this code of calculating the cluster using Kmeans **does not require special library installations** and it built from scratch only using basic Python commands and using only random library (installed by default).
+You can see example output of the simulation code here (based on [data_1.csv](https://github.com/EtzionR/Kmeans-Simulator/blob/main/example/data_1.csv) dataset):
+
+![exm](https://github.com/EtzionR/Kmeans-Simulator/blob/main/picture/output_3.gif)
+
+As yo can see, the code works by displaying the points in 2D space based on the **first two fields** in the given dataframe, but the calculation is performed on all the fields. Also, a simple version of the algorithm built for this project, without plots generating, is available here: [**kmeans algorithm**](https://github.com/EtzionR/Kmeans-Simulator/blob/main/km.py). It should be noted that this code of calculating the cluster using Kmeans **does not require special library installations** and it built from scratch only using basic Python commands and using only random library (installed by default).
 
 It should be noted that the algorithm iterations stop when the distance between the old and new centers reaches a **minor size** determined by a defined epsilon. This size is calculated automatically as follows:
 
@@ -31,6 +35,19 @@ when P represent the number of columns in the dataframe, and len:
 It is also possible to define under the parameter **"eps"** another epsilon, which the user wants to use. At the same time, the decision to select epsilon automatically brings the code at the end of its run to fairly **accurate** results relative to the run when eps = 0:
 
 ![acc](https://github.com/EtzionR/Kmeans-Simulator/blob/main/picture/eps_adapt.png)
+
+This calculation made by using this examples files:
+
+1. [data_1.csv](https://github.com/EtzionR/Kmeans-Simulator/blob/main/example/data_1.csv)
+
+2. [data_2.csv](https://github.com/EtzionR/Kmeans-Simulator/blob/main/example/data_2.csv)
+
+3. [data_3.csv](https://github.com/EtzionR/Kmeans-Simulator/blob/main/example/data_3.csv)
+
+We check the accuracy by comparing two labels sets:
+- The labels of the rows when the distance between the centers is smaller than the adapt epsilon.
+- The labels when the distance is equal to 0. 
+As you can see, we get **pretty accurate** results even when we choose the adapt epsilon.
 
 It can also be clearly seen that the **amount of iterations decreases significantly** when making an informed choice of epsilon:
 
