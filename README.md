@@ -51,7 +51,7 @@ As you can see, we get **pretty accurate** results even when we choose the adapt
 
 It can also be clearly seen that the **amount of iterations decreases significantly** when making an informed choice of epsilon:
 
-![itr](https://github.com/EtzionR/Kmeans-Simulator/blob/main/picture/eps_distr.png)
+![itr](https://github.com/EtzionR/Kmeans-Simulator/blob/main/picture/eps_distr_.png)
 
 
 ## Libraries
