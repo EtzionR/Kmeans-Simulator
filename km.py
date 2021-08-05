@@ -1,3 +1,6 @@
+# Create by Etzion Harari
+# https://github.com/EtzionR
+
 # import libraries
 from random import sample
 
@@ -68,3 +71,5 @@ class Kmeans:
             self.centers= [colmean(self.tables[i]) for i in range(self.k)]
             self.running= stop(old_centers, self.centers, self.eps)
         return self
+
+# MIT © Etzion Harari
