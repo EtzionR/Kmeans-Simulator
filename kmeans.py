@@ -1,3 +1,6 @@
+# Create by Etzion Harari
+# https://github.com/EtzionR
+
 # import libraries
 import matplotlib.pyplot as plt
 from random import sample
@@ -103,3 +106,5 @@ class Simulator:
         """
         timing = [1 for i in range(self.times-1)]+[4]
         img.mimsave(file+'.gif', [img.imread(i) for i in self.png], duration=timing)
+
+# MIT © Etzion Harari
