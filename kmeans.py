@@ -107,4 +107,5 @@ class Simulator:
         timing = [1 for i in range(self.times-1)]+[4]
         img.mimsave(file+'.gif', [img.imread(i) for i in self.png], duration=timing)
 
+# License
 # MIT © Etzion Harari
