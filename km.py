@@ -72,4 +72,5 @@ class Kmeans:
             self.running= stop(old_centers, self.centers, self.eps)
         return self
 
+# License
 # MIT © Etzion Harari
